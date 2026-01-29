@@ -94,6 +94,8 @@
 .card__content h2 {
   margin: 0;
   font-size: 1.5rem;
+  color: #FFD700; /* 亮金色 */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* 增加黑色阴影 */
 }
 
 .card__content p {
