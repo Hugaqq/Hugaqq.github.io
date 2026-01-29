@@ -1,0 +1,58 @@
+/* --- UI/UX 布局修复自定义CSS --- */
+
+/* 1. 调整布局比例 (仅在桌面端生效) */
+@media (min-width: 900px) {
+  /* 调整主内容区域和侧边栏的 flex 基础大小和最大宽度 */
+  #page #recent-posts { /* 主内容区 */
+    flex: 0 0 70%; /* 占据 70% 宽度 */
+    max-width: 70%;
+  }
+
+  #page #aside-content { /* 侧边栏 */
+    flex: 0 0 30%; /* 占据 30% 宽度 */
+    max-width: 30%;
+  }
+
+  /* 调整主内容与侧边栏之间的间距，保持一致 */
+  #page .layout_post > div {
+    margin-left: 20px; /* 您可以根据需要调整这个值 */
+  }
+
+  /* 确保 Web Info 小组件的文本不换行，以适应新宽度 */
+  #aside-content #card-webinfo .webinfo-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      white-space: nowrap; /* 防止文本换行 */
+      padding: 0.2em 0;
+  }
+}
+
+/* 2. 统一卡片排版和间距 */
+
+/* 确保所有文章卡片都是全宽 */
+#recent-posts .recent-post-item {
+  width: 100% !important; /* 强制覆盖主题默认宽度 */
+  margin-left: 0 !important; /* 确保左对齐 */
+  margin-right: 0 !important; /* 确保右对齐 */
+}
+
+/* 为所有卡片（文章和侧边栏组件）设置统一的底部外边距，以规范垂直间距 */
+#recent-posts .recent-post-item,
+#aside-content .card-widget {
+  margin-bottom: 1.5rem; /* 统一卡片间距 */
+}
+
+/* 优化侧边栏组件的内部排版 */
+#aside-content .card-widget {
+  padding: 1rem; /* 为所有侧边栏组件增加内边距 */
+}
+
+#aside-content .card-widget .item-headline {
+  font-size: 1.1em; /* 调整小标题字体大小 */
+}
+
+#aside-content #card-author-description { /* 针对作者卡片简介 */
+  line-height: 1.6; /* 增加行高以提高可读性 */
+  padding: 0 0.5rem; /* 左右内边距 */
+}
