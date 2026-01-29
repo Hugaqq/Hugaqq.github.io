@@ -3,11 +3,11 @@
   <title>Hugaqq&#39;s Notebook</title>
   
   <subtitle>gugugaga</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://hugaqq.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://hugaqq.github.io/"/>
   <updated>2026-01-23T07:09:06.712Z</updated>
-  <id>http://example.com/</id>
+  <id>https://hugaqq.github.io/</id>
   
   <author>
     <name>Hugaqq</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/posts/4a17b156.html"/>
-    <id>http://example.com/posts/4a17b156.html</id>
+    <link href="https://hugaqq.github.io/posts/4a17b156.html"/>
+    <id>https://hugaqq.github.io/posts/4a17b156.html</id>
     <published>2026-01-23T04:46:52.974Z</published>
     <updated>2026-01-23T07:09:06.712Z</updated>
     
