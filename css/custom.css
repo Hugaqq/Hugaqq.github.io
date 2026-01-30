@@ -56,3 +56,9 @@
   line-height: 1.6; /* 增加行高以提高可读性 */
   padding: 0 0.5rem; /* 左右内边距 */
 }
+
+/* 3. 去掉头像旋转动画 */
+.avatar-img img {
+  animation: none !important;
+  transform: none !important;
+}
